@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="app-container">
+      <div class="heading">
+        <h1>TODO APP</h1>
+      </div>
+      <div class="text-area">
+        <div>
+          <label for="tasks-details">DESCRIPTION</label>
+        </div>
+        <textarea
+          id="tasks-details"
+          placeholder="what do you need to do?"
+          name="tasks-details"
+        ></textarea>
+      </div>
+      <div class="list-date-container">
+        <div class="list">
+          <div>
+            <label for="category">Category</label>
+          </div>
+          <select id="category">
+            <option value="none" selected disabled>Choose a category</option>
+            <option value="personal">Personal</option>
+            <option value="work">Work</option>
+            <option value="school">School</option>
+            <option value="cleaning">Cleaning</option>
+            <option value="others">Others</option>
+          </select>
+        </div>
+        <div class="date-container">
+          <div>
+            <label for="date">Due Date</label>
+          </div>
+          <input type="date" id="date" />
+        </div>
+      </div>
+      <span id="error"></span>
+
+      <div class="add-delete-container">
+        <button class="add btn"><i class="fa-solid fa-plus"></i>ADD TASKS</button>
+        <button class="delete btn"><i class="fa-solid fa-trash"></i>DELETE TASKS</button>
+      </div>
+      <div class="todo-container">
+        <ul class="todos">
+          <!-- <li>
+            <div class="check-label">
+              <div class="tasks">
+                <input type="checkbox" id="todo-task1" class="check-todo" checked /> -->
+          <!-- <div> -->
+          <!-- <div> -->
+
+          <!-- <label for="todo-task1" class="task-details">why not add a task</label>
+              </div> -->
+          <!-- <div> -->
+          <!-- <div class="task-date">
+                <i class="fa-sharp fa-solid fa-calendar-days"></i>May 3, 2023
+              </div>
+            </div> -->
+          <!-- </div> -->
+          <!-- </div> -->
+          <!-- <div class="category">
+              <button class="category-btn">SCHOOL</button>
+            </div>
+          </li>
+          <li> -->
+          <!-- <div class="check-label">
+              <div class="tasks">
+                <input type="checkbox" id="todo-task1" class="check-todo" checked /> -->
+          <!-- <div> -->
+          <!-- <div> -->
+
+          <!-- <label for="todo-task1" class="task-details">why not add a task</label>
+              </div> -->
+          <!-- <div> -->
+          <!-- <div class="task-date">
+                <i class="fa-sharp fa-solid fa-calendar-days"></i>May 3, 2023
+              </div>
+            </div> -->
+          <!-- </div> -->
+          <!-- </div> -->
+          <!-- <div class="category">
+              <button class="category-btn">SCHOOL</button>
+            </div>
+          </li> -->
+          <!-- second li -->
+          <!-- <li>
+            <div class="tasks">
+              <input type="checkbox" id="todo-task2" class="check-todo" />
+              <div>
+                <div>
+                  <label for="todo-task2" class="task-details">why not add a task</label>
+                </div>
+                <div>
+                  <label for="todo-task2" class="task-date"
+                    ><i class="fa-sharp fa-solid fa-calendar-days"></i>May 3, 2023</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="category">
+              <button class="category-btn">SCHOOL</button>
+            </div>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
